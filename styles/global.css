@@ -7,7 +7,7 @@
 :root{
     /* FONTES */
     --font-family: "Open Sans", sans-serif;
-    --body-md: 400/600 1rem/auto var(--font-family);
+    --body-md: 400/600 1rem var(--font-family);
     --body-sm: 400/600 .875rem/auto var(--font-family);
     --body-xs: 400/600 .75rem/auto var(--font-family);
     
@@ -16,7 +16,7 @@
     --heading-sm: 700 1.125rem/auto var(--font-family-2);
 
     --font-family-3: "Leckerli One", cursive;
-    --logo: 400 2.5rem/auto var(--font-family-3);
+    --logo: 400 2.5rem var(--font-family-3);
 
     /* CORES */
     --brand-light: #59B2FF;
