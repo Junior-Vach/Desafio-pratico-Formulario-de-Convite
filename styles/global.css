@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: var(--shape-body);
+}
+
 :root{
     /* FONTES */
     --font-family: "Open Sans", sans-serif;
@@ -47,3 +51,12 @@
     --text-body: #C8CDD0;
     --text-heading: #F9F9F9;
 }
+
+#app{
+    display: grid;
+    grid-template-columns: 31% 69%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+

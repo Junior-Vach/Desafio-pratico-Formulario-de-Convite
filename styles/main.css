@@ -1,0 +1,180 @@
+main{
+    overflow: auto;
+}
+
+.main-container{
+    margin: 5rem 8.125rem;
+    h2{
+        /* font: var(--heading-md);  */
+        font: "Baloo 2", sans-serif;
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: var(--text-heading);
+        margin-bottom: 2.5rem;
+    }
+}
+
+fieldset{
+    border: none;
+}
+
+.about-event legend{
+    .calendar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .75rem;
+        margin-bottom: 1.5rem;
+
+        svg{
+            
+            height: 1.5rem;
+            width: 1.5rem;
+
+            & path{
+                color: var(--input-placeholder);
+            }
+        }
+        span{
+            
+            font: "Baloo 2", sans-serif;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-heading);
+
+        }
+    }
+}
+
+input{
+    
+    width: 100%;
+    border-radius: .5rem;
+    color: var(--input-placeholder);
+    border: 1px solid  var(--input-stroke);
+    background-color: var(--input-base);
+    padding: 1rem 1rem;
+    
+    
+    &[type="datetime-local"]{
+        
+        color: var(--input-placeholder);
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 400/600;
+        
+        
+        &::-webkit-calendar-picker-indicator{
+            opacity: 0;
+        }
+    }
+
+}
+    
+label{
+    /* font: var(--body-sm); */
+    font-family: "Open Sans", sans-serif;
+    font-size: .875rem;
+    font-weight: 400/600;
+    color: var(--text-body);
+    margin-bottom: .875rem;
+    display: flex;
+   
+}
+
+::placeholder{
+    /* font: var(--body-md); */
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400/600;
+
+    color: var(--input-placeholder);
+}
+
+.about-event .flex{    
+    display: flex;
+    gap: 2rem;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-2{
+    flex: 2;
+}
+
+.radio-buttom{
+
+    display: flex;
+    border: 1px solid  var(--input-stroke);
+    border-radius: .5rem;
+    background-color: var(--input-base);
+    overflow: hidden;
+    height: 49px;
+    padding: 2px;
+    gap: 4px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400/600;
+    
+    & input[type="radio"]{
+        display: none;
+       
+    }
+
+    div{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+
+        color: var(--text-body);
+        
+        cursor: pointer;
+        border: 1px solid  var(--input-stroke);
+        border-radius: .5rem;
+        /* transition: background 0.3s, color 0.3s; */
+
+        svg{
+            width: 1rem;
+            height: 1rem;
+            color: var(--input-placeholder);
+        }
+    }
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 8.5rem;
+    border-radius: .5rem;
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    padding: 1rem 1rem;
+}
+
+.error{
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    svg{
+
+        width: 1rem;
+        height: 1rem;
+
+        & path{
+            color: var(--danger);
+        }
+
+    }
+
+    span {
+        color: var(--danger);
+    }
+}
+
