@@ -1,9 +1,13 @@
 aside{
     background-image: url(../assets/image/Background.png);
-    background-size: cover;
+    width: 100%;
+    
+    color: white;
+    font-family: 'Poppins', sans-serif;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 45.5rem;
+    
     
 
     & .aside-container{

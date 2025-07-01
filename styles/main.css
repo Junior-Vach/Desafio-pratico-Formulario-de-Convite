@@ -5,10 +5,10 @@ main{
 .main-container{
     margin: 5rem 8.125rem;
     h2{
-        /* font: var(--heading-md);  */
-        font: "Baloo 2", sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 1.75rem;
         font-weight: 700;
+
         color: var(--text-heading);
         margin-bottom: 2.5rem;
     }
@@ -16,35 +16,37 @@ main{
 
 fieldset{
     border: none;
+    margin-bottom: 3rem;
 }
 
-.about-event legend{
-    .calendar{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: .75rem;
-        margin-bottom: 1.5rem;
 
-        svg{
+.legenda{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+
+    svg{
             
-            height: 1.5rem;
-            width: 1.5rem;
+        height: 1.5rem;
+        width: 1.5rem;
 
-            & path{
-                color: var(--input-placeholder);
-            }
-        }
-        span{
-            
-            font: "Baloo 2", sans-serif;
-            font-size: 1.125rem;
-            font-weight: 700;
-            color: var(--text-heading);
-
+        & path{
+             color: var(--input-placeholder);
         }
     }
+    span{
+            
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.125rem;
+        font-weight: 700;
+
+        color: var(--text-heading);
+
+    }
 }
+
 
 input{
     
@@ -54,6 +56,7 @@ input{
     border: 1px solid  var(--input-stroke);
     background-color: var(--input-base);
     padding: 1rem 1rem;
+    
     
     
     &[type="datetime-local"]{
@@ -100,9 +103,7 @@ label{
     flex: 1;
 }
 
-.flex-2{
-    flex: 2;
-}
+
 
 .radio-buttom{
 
@@ -110,32 +111,34 @@ label{
     border: 1px solid  var(--input-stroke);
     border-radius: .5rem;
     background-color: var(--input-base);
-    overflow: hidden;
-    height: 49px;
-    padding: 2px;
-    gap: 4px;
+    height: 3.0625rem;
+    padding: .125rem;
+    gap: .25rem;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     font-weight: 400/600;
+    
+    
     
     & input[type="radio"]{
         display: none;
        
     }
 
-    div{
+    label{
         display: flex;
         flex: 1;
         justify-content: center;
         align-items: center;
         gap: .5rem;
-
+        width: 8.125rem;
+        height: 2.6875rem;
         color: var(--text-body);
         
         cursor: pointer;
-        border: 1px solid  var(--input-stroke);
+
         border-radius: .5rem;
-        /* transition: background 0.3s, color 0.3s; */
+        
 
         svg{
             width: 1rem;
@@ -143,13 +146,20 @@ label{
             color: var(--input-placeholder);
         }
     }
+
+
+    input[type="radio"]:checked + label {
+        background-color: var(--input-stroke);
+    }
 }
 
 textarea{
     resize: none;
+    line-height: 1rem;
     width: 100%;
     height: 8.5rem;
     border-radius: .5rem;
+    border: 1px solid var(--input-stroke);
     background-color: var(--input-base);
     color: var(--input-placeholder);
     padding: 1rem 1rem;
@@ -177,4 +187,67 @@ textarea{
         color: var(--danger);
     }
 }
+
+
+.main-color{
+    width: 100%;
+
+    margin-bottom: 1rem;
+
+    label:nth-child(1){
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .radio{
+        display: flex;
+        gap:1.4rem;
+        
+        input[type="radio"]{
+            display: none;
+        }
+
+        label{
+            
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-top: 1rem;
+            border-radius: 50%;
+            background-color: var(--shape-button);
+            position: relative;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        label::after{
+            content: "";
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 50%;
+            background-color: var(--color);
+        }
+
+        input[type="radio"]:checked + label {
+            border: 2px solid var(--brand-light);
+        }
+
+        .color1 { --color: var(--brand-light); }
+        .color2 { --color: var(--navy); }
+        .color3 { --color: var(--purple); }
+        .color4 { --color: var(--fuschia); }
+        .color5 { --color: var(--pink ); }
+        .color6 { --color: var(--danger); }
+        .color7 { --color: var(--orange); }
+        .color8 { --color: var(--yellow); }
+        .color9 { --color: var(--lime); }
+        .color10 { --color: var(--green); }
+        .color11 { --color: var(--cyan); }
+    }
+}
+
+
+
+
 
