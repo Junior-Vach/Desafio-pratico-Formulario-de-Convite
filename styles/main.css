@@ -3,7 +3,8 @@ main{
 }
 
 .main-container{
-    margin: 5rem 8.125rem;
+    width: 35rem;
+    margin: 5rem auto 5rem;
     h2{
         font-family: "Open Sans", sans-serif;
         font-size: 1.75rem;
@@ -64,7 +65,7 @@ input{
         color: var(--input-placeholder);
         font-family: "Open Sans", sans-serif;
         font-size: 1rem;
-        font-weight: 400/600;
+        font-weight: 500;
         
         
         &::-webkit-calendar-picker-indicator{
@@ -78,7 +79,7 @@ label{
     /* font: var(--body-sm); */
     font-family: "Open Sans", sans-serif;
     font-size: .875rem;
-    font-weight: 400/600;
+    font-weight: 500;
     color: var(--text-body);
     margin-bottom: .875rem;
     display: flex;
@@ -89,7 +90,7 @@ label{
     /* font: var(--body-md); */
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
-    font-weight: 400/600;
+    font-weight: 500;
 
     color: var(--input-placeholder);
 }
@@ -138,12 +139,17 @@ label{
         cursor: pointer;
 
         border-radius: .5rem;
+        border: 2px solid transparent;
         
 
         svg{
             width: 1rem;
             height: 1rem;
             color: var(--input-placeholder);
+        }
+
+        &:hover{
+            border-color: var(--input-stroke);
         }
     }
 
@@ -190,8 +196,6 @@ textarea{
 
 
 .main-color{
-    width: 100%;
-
     margin-bottom: 1rem;
 
     label:nth-child(1){
@@ -199,9 +203,9 @@ textarea{
         padding: 0;
     }
 
-    .radio{
+    .radio-color{
         display: flex;
-        gap:1.4rem;
+        gap: .75rem;
         
         input[type="radio"]{
             display: none;
@@ -247,7 +251,51 @@ textarea{
     }
 }
 
+.event-theme{
+    margin-bottom: 1.75rem;
+    .radio-theme {
 
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+        gap: .5rem;
+        
+        input[type="radio"] {
+            display: none;
+        }
 
+        label {
+            width: 8.375rem;
+            height: 6.4375rem;
+            border-radius: .5rem;
+            background-color: var(--shape-button);
+            border: .125rem solid transparent;
+            box-sizing: border-box;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
 
+            img {
+                margin: .25rem;
+            }
 
+            p {
+                font-family: "Open Sans", sans-serif;
+                font-size: .875rem;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            &:hover {
+                border-color: var(--text-body);
+            }
+        }
+
+        input[type="radio"]:checked + label {
+            border: 2px solid var(--brand-light);
+        }
+
+    }
+
+}

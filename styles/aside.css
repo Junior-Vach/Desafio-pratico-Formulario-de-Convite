@@ -30,7 +30,7 @@ aside{
             /* font: var(--body-md); */
             font: 1rem;
             font-family: "Open Sans", sans-serif;
-            font-weight: 400/600;
+            font-weight: 500;
             color: var(--text-heading);
         }
 
