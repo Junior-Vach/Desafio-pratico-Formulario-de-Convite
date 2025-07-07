@@ -60,3 +60,121 @@ body{
     overflow: hidden;
 }
 
+.flex{
+    display: flex;
+}
+
+.flex-1{
+    flex: 1;
+}
+.flex-2{
+    flex: 2;
+}
+
+fieldset{
+    border: none;
+    margin-bottom: 3rem;
+}
+
+.required-field{
+    margin-left: 1rem;
+    color: var(--danger);
+}
+
+.legenda{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+
+    svg{
+            
+        height: 1.5rem;
+        width: 1.5rem;
+
+        & path{
+             color: var(--input-placeholder);
+        }
+    }
+    span{
+            
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.125rem;
+        font-weight: 700;
+
+        color: var(--text-heading);
+
+    }
+}
+
+input{
+    
+    width: 100%;
+    border-radius: .5rem;
+    color: var(--input-placeholder);
+    border: 1px solid  var(--input-stroke);
+    background-color: var(--input-base);
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    
+    
+    
+    &[type="datetime-local"]{
+        
+        color: var(--input-placeholder);
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        
+        
+        &::-webkit-calendar-picker-indicator{
+            opacity: 0;
+        }
+    }
+
+}
+    
+label{
+    /* font: var(--body-sm); */
+    font-family: "Open Sans", sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    color: var(--text-body);
+    margin-bottom: .875rem;
+    display: flex;
+   
+}
+
+::placeholder{
+    /* font: var(--body-md); */
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+
+    color: var(--input-placeholder);
+}
+
+
+/* .error{
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    svg{
+
+        width: 1rem;
+        height: 1rem;
+
+        & path{
+            color: var(--danger);
+        }
+
+    }
+
+    span {
+        color: var(--danger);
+    }
+} */

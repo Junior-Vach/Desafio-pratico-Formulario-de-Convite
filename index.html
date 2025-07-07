@@ -53,44 +53,44 @@
                         </legend>
 
                         <div class="title">
-                            <label for="title">Título</label>
+                            <label for="title">Título<span class="required-field">*</span></label>
                             <input id="title" name="title" type="text" placeholder="Nome do evento" required>
-                            <div class="error">
+                            <!-- <div class="error">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z" fill="white"/>
                                 </svg>
 
                                 <span>Insira o nome do evento</span>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="flex">
                             <div class="flex-1">
-                                <label for="start">Início</label>
+                                <label for="start">Início<span class="required-field">*</span></label>
                                 <input type="datetime-local" id="start" name="start" required>
-                                <div class="error">
+                                <!-- <div class="error">
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z" fill="white"/>
                                     </svg>
                                     <span>Insira a data de início do evento</span>
-                                </div>
+                                </div> -->
                             </div>    
 
                             <div class="flex-1">
                                 <label for="end">Fim</label>
-                                <input type="datetime-local" id="end" name="end" required>
-                                <div class="error">
+                                <input type="datetime-local" id="end" name="end">
+                                <!-- <div class="error">
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z" fill="white"/>
                                     </svg>
                                     <span>Insira a data final do evento</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
                         <div class="flex">
                             <div class=" flex-1">
-                                <label>Tipo</label>
+                                <label>Tipo<span class="required-field">*</span></label>
                                 <div class="radio-buttom">
                                     <input type="radio" id="btn-presencial" name="btn-tipo" required>
                                     <label for="btn-presencial">
@@ -108,23 +108,23 @@
                                         <p>Online</p>
                                     </label>
                                 </div>
-                                <div class="error">
+                                <!-- <div class="error">
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z" fill="white"/>
                                     </svg>
                                     <span>Insira o tipo do evento</span>
-                                </div>
+                                </div> -->
                             </div>    
 
                             <div class="flex-1">
-                                <label for="location">Local</label>
-                                <input type="text" id="location" name="location" placeholder="Link ou endereço">
-                                <div class="error">
+                                <label for="location">Local<span class="required-field">*</span></label>
+                                <input type="text" id="location" name="location" placeholder="Link ou endereço" required>
+                                <!-- <div class="error">
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z" fill="white"/>
                                     </svg>
                                     <span>Insira o local do evento</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -145,7 +145,7 @@
                             </div>
                         </legend>
                         <div class="main-color">
-                            <label>Cor Principal</label>
+                            <label>Cor Principal<span class="required-field">*</span></label>
                             <div class="radio-color">
                                 <input type="radio" name="color" id="color1" required>
                                 <label for="color1" class="color1"></label>
@@ -182,7 +182,7 @@
                             </div>
                         </div>
                         <div class="event-theme">
-                            <label>Tema do evento</label>
+                            <label>Tema do evento<span class="required-field">*</span></label>
                             <div class="radio-theme">
                                 
                                 <input type="radio" name="theme" id="birthday" required>
@@ -259,8 +259,103 @@
 
                             </div>
                         </div>
+                        <div class="flex">
+                            <div class="tonality flex-1">
+                                <label>Estilo</label>
+                                <div class="style">
+                                    <input type="checkbox" name="style" id="style">
+                                    <label for="style" class="switch"></label>
+                                    <span class="text-dark">Escuro</span>
+                                    <span class="text-light">Claro</span>
+                                </div>
+                            </div>
+                            
+                            <div class="arquivos flex-2">
+                                <label for="cover-photo">Foto de capa</label>
+                                <div class="cover-photo">
+                                    <label for="file" class="file-selection">
+                                        <img src="assets/icons/upload.svg" alt="ícone de upload">
+                                        Selecionar
+                                    </label>
+                                    <input type="file" id="file" name="file" class="arquivo"> 
+                                </div>
+                            </div>
+                        </div>
                     </fieldset>
+
+                    <fieldset class="contact-data">
+                        <legend>
+                            <div class="legenda">
+
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 1.66675C11.219 1.66675 11.6667 2.11446 11.6667 2.66675V4.33341H20.3333V2.66675C20.3333 2.11446 20.781 1.66675 21.3333 1.66675C21.8856 1.66675 22.3333 2.11446 22.3333 2.66675V4.33341H25.3333C27.3584 4.33341 29 5.97504 29 8.00008V26.6667C29 28.6918 27.3584 30.3334 25.3333 30.3334H6.66667C4.64162 30.3334 3 28.6918 3 26.6667V8.00008C3 5.97504 4.64162 4.33341 6.66667 4.33341H9.66667V2.66675C9.66667 2.11446 10.1144 1.66675 10.6667 1.66675ZM6.66667 6.33341C5.74619 6.33341 5 7.07961 5 8.00008V26.6667C5 27.5872 5.74619 28.3334 6.66667 28.3334H25.3333C26.2538 28.3334 27 27.5872 27 26.6667V8.00008C27 7.07961 26.2538 6.33341 25.3333 6.33341H6.66667ZM16 11.6667C15.0795 11.6667 14.3333 12.4129 14.3333 13.3334C14.3333 14.2539 15.0795 15.0001 16 15.0001C16.9205 15.0001 17.6667 14.2539 17.6667 13.3334C17.6667 12.4129 16.9205 11.6667 16 11.6667ZM12.3333 13.3334C12.3333 11.3084 13.975 9.66675 16 9.66675C18.025 9.66675 19.6667 11.3084 19.6667 13.3334C19.6667 15.3585 18.025 17.0001 16 17.0001C13.975 17.0001 12.3333 15.3585 12.3333 13.3334ZM9.40728 21.4074C10.0949 20.7197 11.0275 20.3334 12 20.3334H20C20.9725 20.3334 21.9051 20.7197 22.5927 21.4074C23.2804 22.095 23.6667 23.0276 23.6667 24.0001C23.6667 24.5524 23.219 25.0001 22.6667 25.0001C22.1144 25.0001 21.6667 24.5524 21.6667 24.0001C21.6667 23.5581 21.4911 23.1341 21.1785 22.8216C20.866 22.509 20.442 22.3334 20 22.3334H12C11.558 22.3334 11.1341 22.509 10.8215 22.8216C10.5089 23.1341 10.3333 23.5581 10.3333 24.0001C10.3333 24.5524 9.88562 25.0001 9.33333 25.0001C8.78105 25.0001 8.33333 24.5524 8.33333 24.0001C8.33333 23.0276 8.71964 22.095 9.40728 21.4074Z" fill="white"/>
+                                </svg>
+
+                                <span>Dados para contato</span>
+                            </div>
+                        </legend>
+
+                        <div class="data">
+                            <div class="name">
+                                <label for="name">Nome<span class="required-field">*</span></label>
+                                <input id="name" name="name" type="text" placeholder="Nome completo" required>
+                            </div>
+
+                            <div class="flex">
+                                <div class="flex-1">
+                                    <label for="email">E-mail<span class="required-field">*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                                    <!-- <div class="error">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z" fill="white"/>
+                                        </svg>
+                                        <span>Insira a data de início do evento</span>
+                                    </div> -->
+                                </div>    
+
+                                <div class="flex-1">
+                                    <label for="telephone">Telefone<span class="required-field">*</span></label>
+                                    <input type="tel" id="telephone" name="telephone" placeholder="(99) 99999-9999" required>
+                                    <!-- <div class="error">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z" fill="white"/>
+                                        </svg>
+                                        <span>Insira a data final do evento</span>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="terms">
+                            <div class="privacy-terms">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy"></label>
+                                <p>
+                                    Li e concordo com os <span class="blue">Termos e Condições</span> e com a <span class="blue">Política de Privacidade</span>
+                                    <span class="required-field">*</span>
+                                </p>
+                            </div>
+                            <div class="accept-email">
+                                <input type="checkbox" id="acpt-email" name="acpt-email">
+                                <label for="acpt-email"></label>
+                                <p>Aceito receber atualizações e promoções por e-mail</p>
+                            </div>
+                            <div class="accept-sms">
+                                <input type="checkbox" id="sms" name="sms">
+                                <label for="sms"></label>
+                                <p>Aceito receber atualizações e promoções por SMS</p>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="end">
+                    <button type="submit" class="send">
+                        <img src="assets/icons/ticket.svg">
+                        <span>Gerar convite</span>
+                    </button>
+                </div>
                 </form>
+                
             </div>
         </main>
     </div>

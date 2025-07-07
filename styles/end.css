@@ -1,0 +1,32 @@
+.end{
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    
+    .send{
+
+        width: 177px;
+        height: 48px;
+        background-color: var(--brand-dark);
+        border: none;
+        border-radius: 8px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 20px;
+            height: 20px;
+        }
+
+        span{
+            font-family: "Open Sans", sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+    }
+}
