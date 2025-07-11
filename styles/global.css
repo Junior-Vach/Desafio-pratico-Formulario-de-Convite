@@ -88,7 +88,7 @@ fieldset{
     gap: .75rem;
     margin-bottom: 1.5rem;
 
-    svg{
+    & svg{
             
         height: 1.5rem;
         width: 1.5rem;
@@ -97,7 +97,7 @@ fieldset{
              color: var(--input-placeholder);
         }
     }
-    span{
+    & span{
             
         font-family: "Open Sans", sans-serif;
         font-size: 1.125rem;

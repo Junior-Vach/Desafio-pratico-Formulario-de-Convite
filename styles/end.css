@@ -4,7 +4,7 @@
     justify-content: end;
     align-items: end;
     
-    .send{
+    & .send{
 
         width: 177px;
         height: 48px;
@@ -16,12 +16,12 @@
         align-items: center;
         justify-content: center;
 
-        img{
+        & img{
             width: 20px;
             height: 20px;
         }
 
-        span{
+        & span{
             font-family: "Open Sans", sans-serif;
             font-size: 1rem;
             font-weight: 600;

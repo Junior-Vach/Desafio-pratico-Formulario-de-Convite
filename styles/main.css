@@ -5,7 +5,8 @@ main{
 .main-container{
     width: 35rem;
     margin: 5rem auto 5rem;
-    h2{
+
+    & h2{
         font-family: "Open Sans", sans-serif;
         font-size: 1.75rem;
         font-weight: 700;

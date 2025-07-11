@@ -1,18 +1,16 @@
 aside{
     background-image: url(../assets/image/Background.png);
     width: 100%;
-    
+
     color: white;
     font-family: 'Poppins', sans-serif;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
-    
 
     & .aside-container{
         max-width: 21rem;
-        margin: 2rem auto 34.5rem;
+        margin: 2rem auto;
 
         & img{
             width: 2.865625rem;
@@ -32,8 +30,11 @@ aside{
             font-family: "Open Sans", sans-serif;
             font-weight: 500;
             color: var(--text-heading);
+            
         }
-
     }
+
 }
+
+
 
